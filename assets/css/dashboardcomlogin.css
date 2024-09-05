@@ -1,0 +1,74 @@
+body {
+    background-image: url('../../assets/img/praia.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+        font-family: Arial, sans-serif;}
+
+  header {
+    background-color: #FFC670;
+    box-shadow: rgba(0, 0, 0, 0.425) 3px 4px 2px;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+
+.container-fluid {
+    text-align: center;
+    padding-top: 100px;
+}
+
+h2, h3, h4 {
+    margin: 0 0 20px;
+}
+
+.recent-access {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recent-box {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-radius: 100px;
+}
+
+
+.footer-img {
+    background-image: url('../../assets/img/bananeiras.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-top: 20px;
+}

@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/bolhas\ azuis.jpg);
+    background-repeat: no-repeat;
+    background-size: 120rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.wrap{
+    display: flex;
+    width: 40rem;
+    height: 32rem;
+    background-color: #C7C0BC;
+    border-radius: 2rem;
+    background-color: #1a7ad3;
+    box-shadow: 20px 25px 20px -15px rgba(206, 197, 80, 0.25), 25px 0px 20px -15px rgba(0,0,0,0.25);
+}
+.card-left{
+    width: 20rem;
+    height: 32rem;
+    background-color: #1a7ad3;
+    background-size: 101% 110%;
+    border-radius: 2rem 0 0 2rem;
+    border: none;
+}
+.card-left h1{
+    margin: 3rem;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    border-radius: .3rem;
+}
+.card-left .form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.name-contact,
+.phone-contact{
+    display: flex;
+    width: 80%;
+}
+.name-contact img,
+.phone-contact img{
+    margin-right: 1rem;
+    width: 2rem;
+}
+.card-left input{
+    background-color: #fff;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+.card-left button{
+    background-color: #f7e924;
+    width: 80%;
+    height: 2rem;
+    border: none;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+.card-right{
+    display: flex;
+    width: 20rem;
+    height: 29rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    background-color: #1a7ad3;
+    border-radius: 2rem 2rem 2rem 0;
+}
+.img-schedule{
+    width: 6rem;
+    height: 6rem;
+    background-color: #000;
+    border: 5px solid #000;
+    border-radius: 3rem;
+    margin-top: -3rem;
+}
+.img-schedule img{
+    width: 4rem;
+    margin: 0.7rem;
+}
+.table{
+    margin-top: 1rem;
+    width: 18rem;
+    height: 23rem;
+    background-color: #FFF;
+    border-radius: 0.5rem;
+}
+.row{
+    display: flex;
+}
+.row .col{
+    width: 50%;
+    padding: 1rem 2rem 0 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.row .col-left{
+    border-right: 1px solid #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.5rem;
+}
+.row .col-right{
+    border-left: 1px solid #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.5rem;
+}
+.row .col-row{
+    width: 50%;
+    text-align: center;
+    margin: 0.5rem 0;
+}

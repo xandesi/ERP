@@ -1,0 +1,73 @@
++<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Departamento</title>
+    <link rel="stylesheet" href="../../src/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../">
+    <link rel="stylesheet" href="../../assets/css/ADICIONARDEPARTAMENTO.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container  " style="background-color: #FFC670; box-shadow: rgba(0, 0, 0, 0.425) 3px 4px 2px ;">
+                <img src="../../assets/img/SEM FUNDO REAL OU FAKE.png" alt="" width="190">
+                <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <ul class="navbar-nav px-4 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link borTop text-black " aria-current="page" href="">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link borTop text-black " href="../pages/">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link borTop text-black " href="./src/pages/nossosplanos.html">Planos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link borTop text-black " href="./src/pages/nossosplanos.html">Contatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link borTop borBottom text-black  fs-6 fw-bolder" aria-disabled="true" href="./src/pages/Dashboardsemlogin.html">ENTRAR</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="department-container">
+        <div class="adp position-absolute">
+            <h2>Adicionar <br> Departamento</h2>
+        </div>
+<div class="predio"> 
+    <div class="blue-overlay">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nome">
+            </div>
+            <div class="form-group">
+                <select class="form-control">
+                    <option>Membros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Máximo de pedidos">
+            </div>
+            <button class="btn btn-primary btn-block">Adicionar</button>
+        </div>
+    </div>
+       
+    </main>
+
+    <script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
