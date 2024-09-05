@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Cliente - Senac</title>
+    <!-- Bootstrap CSS -->
+    <link href="" rel="stylesheet">
+    <link rel="stylesheet" href="../../src/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/adicionarcliente.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container" style="background-color: #FFC670; box-shadow: rgba(0, 0, 0, 0.425) 3px 4px 2px;">
+                <img src="../../assets/img/SEM FUNDO REAL OU FAKE.png" alt="Senac Logo" width="190">
+                <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <ul class="navbar-nav px-4 justify-content-end">
+                        <li class="nav-item"><a class="nav-link text-black" aria-current="page" href="#">Início</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#">Sobre nós</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#">Planos</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#">Contatos</a></li>
+                        <li class="nav-item"><a class="nav-link text-black fw-bolder" href="#">ENTRAR</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="container mt-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card p-4"
+                    style="background-color: #0084ff; border-radius: 25px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);">
+                    <h2 class="text-center text-white mb-4">ADICIONAR CLIENTE</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="status" class="form-label text-white">Status do cliente</label>
+                            <input type="text" class="form-control" id="status" placeholder="Status do cliente">
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-white">Nome</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label text-white">Telefone</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Telefone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-white">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="E-mail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label text-white">Serviço</label>
+                            <select class="form-select" id="service">
+                                <option selected>Selecione o serviço</option>
+                                <option value="1">Serviço 1</option>
+                                <option value="2">Serviço 2</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary"
+                                style="background-color: #0056b3; border: none; border-radius: 25px; width: 100%;">ADICIONAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src=""></script>
+    <script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

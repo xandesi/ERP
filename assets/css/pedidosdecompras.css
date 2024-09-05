@@ -29,9 +29,27 @@
 
 body{
     background-image: url(../../assets/img/Predio.jpg);
+    height: 100vh;
     background-size: cover; 
     background-repeat: no-repeat;
+    width: 100vh;
+    
 }
 .gil{
-    top: 7rem;
+    top: 15rem;
+
+    
+    width: 45rem;
+    height: 25rem;
+    background-color: #0099ff;
+    
+    clip-path: polygon(50% 0%, 97% 6%, 100% 36%, 100% 69%, 97% 88%, 50% 100%, 3% 90%, 1% 72%, 0% 35%, 3% 8%);
+}
+.gil h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer{
+    top: 49rem;
+    background-color:  #FFC670;
 }
