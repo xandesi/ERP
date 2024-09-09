@@ -1,0 +1,32 @@
+body {
+    background-color: #F5F5F5;
+    padding-top: 70px; /* Espaço para o cabeçalho fixo */
+    background-image:url(../img/bananeiras.jpg);
+}
+ 
+.logo {
+    width: 100px;
+}
+ 
+.card {
+    background-color: #3C92D3;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+ 
+h2 {
+    font-weight: bold;
+}
+ 
+h3 {
+    font-weight: bold;
+}
+ 
+button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+ 
+

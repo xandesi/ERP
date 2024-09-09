@@ -1,0 +1,60 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #90e0ef;
+}
+ 
+main .main-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+main .card {
+    background-color: #56cfe1;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+/* treco  do usuario */
+main .user-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+ 
+
+main .card-title {
+    font-size: 24px;
+    color: #fff;
+}
+ 
+main .card-text {
+    color: #fff;
+    margin-bottom: 20px;
+}
+ 
+main .btn-warning {
+    background-color: #FFC670;
+    border: none;
+    color: #000;
+    font-weight: bold;
+}
+ 
+main .btn-outline-danger {
+    border: 2px solid red;
+    color: red;
+}
+
+header .container{
+    background-color: #FFC670; box-shadow: rgba(0, 0, 0, 0.425) 3px 4px 2px ;
+}

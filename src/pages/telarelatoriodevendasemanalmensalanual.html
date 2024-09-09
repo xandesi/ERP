@@ -1,76 +1,127 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/relatorioams.css">
-    <title>Relatório de Vendas</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container2  " style="background-color: #FFC670; box-shadow: rgba(0, 0, 0, 0.425) 3px 4px 2px ;">
-                <img src="../../assets/img/SEM FUNDO REAL OU FAKE.png" alt="" width="190">
-                <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1" aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <ul class="navbar-nav px-4 justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link borTop text-black " aria-current="page" href="">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link borTop text-black " href="../pages/">Sobre nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link borTop text-black " href="./nossosplanos.html">Planos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link borTop text-black " href="./nossosplanos.html">Contatos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link borTop borBottom text-black  fs-6 fw-bolder" aria-disabled="true" href="./DASHBOARDSEMLOGIN.HTML">ENTRAR</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+<html>
 
-    <div class="container .container-fluid">
-        <div class="wrap">
-            <div class="card-left">
-                <h1>Relatório de Vendas</h1>
-                <form id="form-contact" class="form">
-                    <div class="name-contact">
-                        <input type="text" id="name" required placeholder="Nome">
-                    </div>
-                    <div class="phone-contact">
-                        <input type="number" id="phone" size="20" maxlength="14" onkeypress="mask(this)" required placeholder="Valores">
-                    </div>
-                    <button type="submit" id="btn-contact" class="btn-save">Salvar</button>
-                </form>
+<head>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('../../assets/img/praia.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;}
+    </style>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #FFC670; box-shadow: rgba(0, 0, 0, 0.425) 3px 4px 2px;"> 
+        <img src="../../assets/img/SEM FUNDO REAL OU FAKE.png" alt="Senac Logo" width="190">
+        <button class="navbar-toggler bg-warning me-auto" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="card-right">
-                <div class="img-schedule">
-                    <img src="../../assets/img/notebook.png" alt="icone de um notebook">
-                </div>
-                <div class="table">
-                    <div class="row">
-                        <div class="col col-left">Métrica de Vendas</div>
-                        <div class="col col-right">Valores</div>
-                    </div>
-                    <div id="new-row"></div>
-                </div>
+            <ul class="navbar-nav flex-row flex-nowrap ms-auto px-4">
+                <li class="nav-item"><a class="nav-link text-black" aria-current="page" href="">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="#">Sobre nós</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="#">Planos</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="#">Contatos</a></li>
+                <li class="nav-item"><a class="nav-link text-black fw-bolder" href="#">ENTRAR</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="w-full max-w-2xl bg-blue-500 rounded-lg p-8">
+        <div class="bg-blue-300 rounded-lg p-8">
+            <div class="flex justify-between items-center mb-8">
+                <i class="fas fa-calendar-alt text-4xl text-orange-500">
+                </i>
+                <span class="text-3xl font-bold text-blue-900">
+                    DATA
+                </span>
+                <i class="fas fa-calendar-alt text-4xl text-orange-500">
+                </i>
+            </div>
+            <table class="w-full text-left text-xl">
+                <thead>
+                    <tr>
+                        <th class="text-yellow-500">
+                            Métrica de Vendas
+                        </th>
+                        <th class="text-yellow-500">
+                            Valores
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t border-yellow-500">
+                        <td class="py-4">
+                            Número de Vendas
+                        </td>
+                        <td class="py-4">
+                            <input class="w-full bg-transparent border-none focus:outline-none mt-2" id="numVendas"
+                                type="number" value="255" />
+                        </td>
+                    </tr>
+                    <tr class="border-t border-yellow-500">
+                        <td class="py-4">
+                            Valor médio do negócio
+                        </td>
+                        <td class="py-4">
+                            <input class="w-full bg-transparent border-none focus:outline-none mt-2"
+                                id="valorMedioNegocio" type="number" value="130" />
+                        </td>
+                    </tr>
+                    <tr class="border-t border-yellow-500">
+                        <td class="py-4">
+                            Valor Médio de Produto
+                        </td>
+                        <td class="py-4">
+                            <input class="w-full bg-transparent border-none focus:outline-none mt-2"
+                                id="valorMedioProduto" type="number" step="0.1" value="32.3" />
+                        </td>
+                    </tr>
+                    <tr class="border-t border-yellow-500">
+                        <td class="py-4">
+                            Novos Clientes
+                        </td>
+                        <td class="py-4">
+                            <input class="w-full bg-transparent border-none focus:outline-none mt-2" id="novosClientes"
+                                type="number" value="19" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="flex justify-between items-center mt-8">
+            <div class="flex items-center">
+                <i class="fas fa-users text-4xl text-blue-900">
+                </i>
+                <span class="ml-4 text-blue-900 text-2xl">
+                    TIME Equipe de vendas
+                </span>
+            </div>
+            <div class="flex items-center">
+                <i class="fas fa-user-tie text-4xl text-blue-900">
+                </i>
+                <span class="ml-4 text-yellow-500 text-2xl">
+                    Gerente do time
+                </span>
             </div>
         </div>
     </div>
-    <script src="../js/script.js"></script>
-    <script src=""></script>
-    <script src=""></script>
 </body>
+
 </html>

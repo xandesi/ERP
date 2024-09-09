@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Relatório - Senac</title>
-    <link href="" rel="stylesheet">
     <link rel="stylesheet" href="../../src/bootstrap/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="../../assets/css/dashboardcomlogin.css">
-   
+    <title>Document</title>
 </head>
 <body>
-    <header class="w-100">
-        <nav class="navbar navbar-expand-lg fixed-top w-100">
-            <div class="container  " style="background-color: #FFC670; box-shadow: rgba(0, 0, 0, 0.425) 3px 4px 2px ;">
+    <!-- Header fornecido -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container " style="background-color: #FFC670; box-shadow: rgba(0, 0, 0, 0.425) 3px 4px 2px;">
                 <img src="../../assets/img/SEM FUNDO REAL OU FAKE.png" alt="" width="190">
-                <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight">
+                <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1" aria-labelledby="offcanvasRightLabel">
@@ -25,10 +22,10 @@
                     </div>
                     <ul class="navbar-nav px-4 justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link borTop text-black " aria-current="page" href="./index.HTML">Início</a>
+                            <a class="nav-link borTop text-black " aria-current="page" href="">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link borTop text-black " href="">Sobre nós</a>
+                            <a class="nav-link borTop text-black " href="../pages/">Sobre nós</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link borTop text-black " href="./src/pages/nossosplanos.html">Planos</a>
@@ -37,43 +34,49 @@
                             <a class="nav-link borTop text-black " href="./src/pages/nossosplanos.html">Contatos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link borTop borBottom text-black  fs-6 fw-bolder" aria-disabled="true" href="./src/pages/entrar.html"><img src="../../assets/img/usericon.png" alt="" width="30">Usuario</a>
+                            <a class="nav-link borTop borBottom text-black fs-6 fw-bolder" aria-disabled="true" href="./src/pages/Dashboardsemlogin.html">ENTRAR</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container-fluid">
-        <h2>BEM VINDO DE VOLTA</h2>
-        <h3 class="text-danger">nome do usuario</h3>
-        <h4 class="my-4">Acessados recentemente</h4>
-        <div class="recent-access row justify-content-center">
-            <div class="col-4 mb-3">
-                <div class="recent-box"></div>
-            </div>
-            <div class="col-4 mb-3">
-                <div class="recent-box"></div>
-            </div>
-            <div class="col-4 mb-3">
-                <div class="recent-box"></div>
-            </div>
-            <div class="col-4 mb-3">
-                <div class="recent-box"></div>
-            </div>
-            <div class="col-4 mb-3">
-                <div class="recent-box"></div>
-            </div>
-        </div>
-        <div class="mt-4">
-            <button class="btn btn-primary btn-lg">SEU RELATÓRIO SEMANAL</button>
-        </div>
-    </div>
  
-    <div class="footer-img"></div>
+    <!-- bagulho principal -->
+    <main class="mt-5 pt-4">
+        <div class="container text-center mt-5 pt-5">
+            <h1 class="text-center">BEM VINDO DE VOLTA</h1>
+            <h3 class="text-center text-danger">*nome do usuario*</h3>
  
-    <script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <h4 class="text-center mt-4">Acessados recentemente</h4>
+ 
+            <!-- acessados recemtemente -->
+            <div class="row mt-3">
+                <div class="col-6 col-md-3">
+                    <div class="bg-light border">Item 1</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="bg-light border">Item 2</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="bg-light border">Item 3</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="bg-light border">Item 4</div>
+                </div>
+            </div>
+ 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <!-- imd du fundo-->
+            <div class="banana mt-5 d-flex justify-content-center ">
+
+               <div class="porpeta"><button class="btn btn-primary">SEU RELATÓRIO SEMANAL</button></div>
+            </div>
+        </div>
+    </main>
+ 
+    
+    <script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src=""></script>
 </body>
 </html>
