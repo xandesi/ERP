@@ -1,5 +1,9 @@
 body {
-    background-color: #E7F6F8;
+    background: rgb(0,245,255);
+    background: linear-gradient(30deg, rgba(0,245,255,1) 0%, rgba(9,121,86,1) 45%, rgba(0,212,255,1) 100%);
+    background-repeat: no-repeat;
+ 
+    height: 100vh;
 }
  
 .main-content {
@@ -9,7 +13,7 @@ body {
 }
  
 .card {
-    background-color: #00A9B5;
+   background-color: transparent;
     color: white;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

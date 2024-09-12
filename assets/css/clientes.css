@@ -1,0 +1,87 @@
+
+.navbar-nav .nav-link {
+    border-top: 1px solid transparent;
+    padding: 10px;
+}
+
+.navbar-nav .borTop:hover {
+    border-color: #333;
+}
+
+.navbar-nav .borBottom {
+    border-bottom: 2px solid #333;
+}
+
+h1.text-primary {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card.bg-warning {
+    background-color: #ffc670;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 1.2rem;
+}
+
+button.btn-primary {
+    background-color: #0056b3;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+button.btn-primary i {
+    margin-right: 10px;
+}
+
+/* Ajuste respomsividade */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .card-body h5 {
+        font-size: 1.25rem;
+    }
+
+    .card-body p {
+        font-size: 1rem;
+    }
+}
+
+.papel{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 0 0, 65% 10%);
+    background-color: #0370e5;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+body{
+    background: rgb(0,245,255);
+    background: linear-gradient(180deg, rgba(0,245,255,1) 0%, rgba(6,255,173,1) 32%, rgba(8,132,106,1) 100%, rgba(0,212,255,1) 100%);
+background-repeat: no-repeat;
+height: 100vh;
+
+}
+
+.scrollspy-example {
+    position: relative;
+    height: 300px;
+    overflow: auto;
+}
+
+h4,p{
+    background-color: #ffc670;
+    border-radius: 0.5rem;
+
+}
